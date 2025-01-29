@@ -92,4 +92,26 @@ document.addEventListener("DOMContentLoaded", function () {
       }
     });
   });
+  const widths = document.querySelectorAll(".w");
+  widths.forEach((width) => {
+    const instances = Array.from(width.classList);
+    const regex = /w\[(.*?)\]/;
+    instances.forEach((instance) => {
+      const match = instance.match(regex);
+      if (match) {
+        width.style.width = match[1];
+      }
+    });
+  });
+  const heights = document.querySelectorAll(".h");
+  heights.forEach((height) => {
+    const instances = Array.from(height.classList);
+    const regex = /h\[(.*?)\]/;
+    instances.forEach((instance) => {
+      const match = instance.match(regex);
+      if (match) {
+        height.style.height = match[1];
+      }
+    });
+  });
 });
