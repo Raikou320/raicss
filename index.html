@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rai CSS - Home</title>
+    <link rel="stylesheet" href="./css/main.css" />
+    <script src="./js/main.js"></script>
+  </head>
+  <body class="text-capitalize bg-dark-red">
+    <h1 class="color-white">to use Rai CSS correctly read the Readme</h1>
+    <button
+      class="text-capitalize rounded-xxl color-white border-none w-4 h-4 padding-2 margin-3 bg-pink cursor-pointer box-shadow box-shadow[0:0:2px:3px:#000,:3px:5px:9px:8px:#000] hover hover{color:red;} transition transition[color:0.8s:ease-in-out]"
+      id="download-css-btn"
+    >
+      download the CSS file
+    </button>
+    <button
+      class="text-capitalize rounded-xxl color-white border-none w-4 h-4 padding-2 margin-3 bg-pink cursor-pointer box-shadow box-shadow[0:0:2px:3px:#000,:3px:5px:9px:8px:#000] hover hover{color:red;} transition transition[color:0.8s:ease-in-out]"
+      id="download-readme-btn"
+    >
+      download the Readme file
+    </button>
+    <button
+      class="text-capitalize rounded-xxl color-white border-none w-4 h-4 padding-2 margin-3 bg-pink cursor-pointer box-shadow box-shadow[0:0:2px:3px:#000,:3px:5px:9px:8px:#000] hover hover{color:red;} transition transition[color:0.8s:ease-in-out]"
+      id="download-js-btn"
+    >
+      download the JS file
+    </button>
+    <script>
+      const downloadCSSBtn = document.getElementById("download-css-btn");
+      downloadCSSBtn.addEventListener("click", () => {
+        const link = document.createElement("a");
+        link.href = "./css/main.css";
+        link.download = "raicss-css";
+        link.click();
+      });
+      const downloadReadmeBtn = document.getElementById("download-readme-btn");
+      downloadReadmeBtn.addEventListener("click", () => {
+        const link = document.createElement("a");
+        link.href = "README.md";
+        link.download = "raicss-readme";
+        link.click();
+      });
+      const downloadJSBtn = document.getElementById("download-js-btn");
+      downloadJSBtn.addEventListener("click", () => {
+        const link = document.createElement("a");
+        link.href = "./js/main.js";
+        link.download = "raicss-js";
+        link.click();
+      });
+    </script>
+  </body>
+</html>
