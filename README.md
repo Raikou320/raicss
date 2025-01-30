@@ -13,7 +13,7 @@
   </div>
   <div class="bg-light-red">Div with a light red background color</div>
   <div class="flex flex-center">Text aligned to the center of the div</div>
-  <div class="bg-pink color-red width width[100px] height height[50px]">
+  <div class="bg-pink color-red w w[100px] h h[50px]">
     Text in white with a pink bg
   </div>
 </body>
