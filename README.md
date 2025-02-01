@@ -3,7 +3,7 @@
 ## Simple examples
 ## Does `class-name class-name[data]` for the classes:
   - ### left, right, top, bottom, width, height
-  - ### the data is like %, px, em, rem
+  - ### the data is like an number followed by: %, px, em, rem
 
 ```html
 <body class="text-center bg-pink color-white">
