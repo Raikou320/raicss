@@ -44,7 +44,7 @@
 }
 
 .border-black {
-  border-color: var(--black)
+  border-color: var(--black);
 }
 
 .border-dark-red {
@@ -62,7 +62,6 @@
 .border-mid-blue {
   border-color: var(--mid-blue);
 }
-
 
 .border-transparent {
   border-color: transparent;
@@ -188,6 +187,60 @@
   margin: calc(var(--norm-percent) / 1.5);
   border-radius: calc(var(--norm-percent) * 10);
   box-shadow: 3px 4px 2px 5px #000, -5px -1px 3px 1px #2c2c2c;
+}
+
+/*Card*/
+
+.card {
+  user-select: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: clamp(100px, 200px, 400px);
+  height: clamp(200px, 400px, 800px);
+  border-radius: 5%;
+  border: 1px solid var(--black);
+  padding: calc(var(--norm-percent) / 8);
+  box-shadow: rgb(0, 0, 0) 5px 5px 8px 9px;
+  transition: transform 1.3s ease-in-out, box-shadow 0.7s ease;
+  transform-style: preserve-3d;
+}
+
+.card:hover {
+  box-shadow: rgb(0, 0, 0) 5px 5px 8px 6px;
+  transform: rotateY(-8deg) rotateX(-3deg);
+}
+
+.card:active {
+  box-shadow: rgb(0, 0, 0) 8px 7px 9px 6px;
+  transform: rotateY(20deg) rotateX(10deg);
+}
+
+.card-img {
+  border-radius: 5%;
+  z-index: -1;
+  position: absolute;
+  width: calc(var(--norm-percent) * 25);
+  height: calc(var(--norm-percent) * 25);
+  border: 1px solid black;
+}
+
+.card-title {
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  color: var(--light-red);
+}
+
+.card-description {
+  position: absolute;
+  bottom: 20%;
+  left: 50%;
+  width: 100%;
+  transform: translateX(-50%);
+  color: var(--dark-red);
 }
 
 /*Cursor styles*/

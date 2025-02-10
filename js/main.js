@@ -114,4 +114,20 @@ document.addEventListener("DOMContentLoaded", function () {
       }
     });
   });
+  const cardsImgs = document.querySelectorAll(".card-img");
+  cardsImgs.forEach((card) => {
+    card.ondragstart = (e) => e.preventDefault();
+    card.setAttribute("draggable", "false");
+  });
+  const bgs = document.querySelectorAll(".bg");
+  bgs.forEach((bg) => {
+    const instances = Array.from(bg.classList)
+    const regex = /bg\[(.*?)\]/
+    instances.forEach(instance => {
+      const match = instance.match(regex)
+      if (match) {
+        bg.style.background = match[1]
+      }
+    })
+  });
 });
