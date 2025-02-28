@@ -7,31 +7,13 @@
     <link rel="stylesheet" href="./css/main.css" />
     <script src="./js/main.js"></script>
   </head>
-  <body class="text-capitalize bg bg[#800000]">
-    <div class="card">
-      <img src="https://picsum.photos/200/400" alt="Image de fond de la carte" class="card-img">
-      <h3 class="card-title">Card Title</h3>
-      <p class="card-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum nihil reiciendis sunt placeat quae mollitia nobis, nesciunt, quos aliquam odit, dolorum ab accusamus optio. Eum pariatur animi quo suscipit soluta.</p>
+  <body class="bg-gray-100">
+    <div class="bg-white text-center p-5 rounded-xl font-bold">
+    <h1 class="mb-5">To use Rai CSS correctly read the Readme</h1>
+    <button class="p-2 rounded-sm bg-blue-300" id="download-css-btn">Download the CSS file</button>
+    <button class="p-2 rounded-sm bg-red-300" id="download-readme-btn">Download the Readme file</button>
+    <button class="p-2 rounded-sm bg-green-300" id="download-js-btn">Download the JS file</button>
     </div>
-    <h1 class="color-white">to use Rai CSS correctly read the Readme</h1>
-    <button
-      class="text-capitalize rounded-xxl color-white border-none w w[100px] h h[100px] padding-2 margin-3 bg-pink cursor-pointer box-shadow box-shadow[0:0:2px:3px:#000,:3px:5px:9px:8px:#000]"
-      id="download-css-btn"
-    >
-      download the CSS file
-    </button>
-    <button
-      class="text-capitalize rounded-xxl color-white border-none w w[100px] h h[100px] padding-2 margin-3 bg-pink cursor-pointer box-shadow box-shadow[0:0:2px:3px:#000,:3px:5px:9px:8px:#000]"
-      id="download-readme-btn"
-    >
-      download the Readme file
-    </button>
-    <button
-      class="text-capitalize rounded-xxl color-white border-none w w[100px] h h[100px] padding-2 margin-3 bg-pink cursor-pointer box-shadow box-shadow[0:0:2px:3px:#000,:3px:5px:9px:8px:#000]"
-      id="download-js-btn"
-    >
-      download the JS file
-    </button>
     <script>
       const downloadCSSBtn = document.getElementById("download-css-btn");
       downloadCSSBtn.addEventListener("click", () => {

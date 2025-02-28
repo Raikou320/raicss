@@ -1,20 +1,25 @@
-# Rai CSS is an simple CSS framework
+# RaiCSS
 
-## Simple examples
-## Does `class-name class-name[data]` for the classes:
-  - ### left, right, top, bottom, width, height
-  - ### the data is like an number followed by: %, px, em, rem
+**RaiCSS** is a lightweight CSS framework, devlopped by Raikou 320 and providing utility classes to quickly style HTML elements.
+
+## 🚀 Features
+
+- 🎨 **Colors**: Utility classes for text, background, and borders with predefined color palettes.
+- 📏 **Spacing**: Classes to manage `margin` and `padding` with different values.
+- 🔲 **Borders**: Classes for border styles and radius (`solid`, `dotted`, `rounded`, etc.).
+- 🔠 **Text**: Text alignment, size, and weight utilities.
+- ✨ **Hover Effects**: Change colors, borders, and other properties on `:hover`.
+
+## 📦 Installation
+
+1. Add the CSS file to your project:
+
+   ```html
+   <link rel="stylesheet" href="https://raikou320.github.io/raicss/css/main.css" />
+   ```
+
+2. Add the JavaScript file to your project:
 
 ```html
-<body class="text-center bg-pink color-white">
-  Text colored in white and aligned to the horizontal center
-  <div class="relative left left[0] color-dark-red">
-    Text center to the left and colored in darkred
-  </div>
-  <div class="bg-light-red">Div with a light red background color</div>
-  <div class="flex flex-center">Text aligned to the center of the div</div>
-  <div class="bg-pink color-red w w[100px] h h[50px]">
-    Text in white with a pink bg
-  </div>
-</body>
+ <script src="https://raikou320.github.io/js/main.js">
 ```
