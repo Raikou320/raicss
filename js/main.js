@@ -18,7 +18,7 @@ colors.forEach(color => {
   });
 });
 absColors.forEach(color => {
-  style.innerHTML += `.bg-${color} { background-color: ${color}; }\n .text-${color} { color: ${color}; }\n .hover\\:bg-${color}:hover { backgrond-color: ${color}; }\n .hover\\:color-${color}:hover { color: ${color}; }\n`
+  style.innerHTML += `.bg-${color} { background-color: ${color}; }\n .text-${color} { color: ${color}; }\n .hover\\:bg-${color}:hover { background-color: ${color}; }\n .hover\\:color-${color}:hover { color: ${color}; }\n`
 })
 borderStyles.forEach(bs => {
   style.innerHTML += `.border-${bs} { border-style: ${bs}; }\n .hover\\:border-${bs}:hover { border-style: ${bs}; }\n`
