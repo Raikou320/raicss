@@ -12,13 +12,7 @@
 
 ## 📦 Installation
 
-1. Add the CSS file to your project:
-
-   ```html
-   <link rel="stylesheet" href="https://raikou320.github.io/raicss/css/main.css" />
-   ```
-
-2. Add the JavaScript file to your project:
+Add the JavaScript file to your project:
 
 ```html
  <script src="https://raikou320.github.io/js/main.js">
