@@ -15,5 +15,5 @@
 Add the JavaScript file to your project:
 
 ```html
- <script src="https://raikou320.github.io/js/main.js"></script>
+ <script src="https://raikou320.github.io/rai-css/js/main.js"></script>
 ```
